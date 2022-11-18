@@ -1,0 +1,61 @@
+.person-card-container
+    width: 286px
+    height: 380px
+    background: #FFFFFF
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.05)
+    border-radius: 8px
+    overflow: hidden
+    z-index: 10
+    position: absolute
+    left: 40%
+    top: 56%
+    &-inner
+        display: flex
+        flex-direction: column
+        overflow: hidden
+        z-index: 10
+        &-role
+            font-family: 'RF Dewi Condensed', serif
+            color: #B8C2CC
+            margin-bottom: 4px
+            margin-top: 17px
+            font-weight: 700
+            font-size: 12px
+            line-height: 20px
+            letter-spacing: 1px
+            height: 20px
+        &-name
+            font-family: 'RF Dewi', serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+        &-surname
+            font-family: 'RF Dewi', serif
+            font-style: normal
+            font-weight: 700
+            font-size: 24px
+            line-height: 28px
+            margin-bottom: 4px
+        &-description
+            font-family: 'RF Dewi',serif
+            font-style: normal
+            font-weight: 600
+            font-size: 16px
+            line-height: 24px
+            background: linear-gradient(180deg, #000000 25%, rgba(0, 0, 0, 0) 53.57%)
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+        > span
+            margin-left: 16px
+        &-visual
+            position: relative
+            margin-left: 180px
+            z-index: 5
+        & > img
+            position: relative
+            top: 0
+            width: 286px
+            height: 160px
+            margin-top: -73px
+

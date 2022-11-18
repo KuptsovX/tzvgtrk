@@ -1,0 +1,48 @@
+.credit-card-form-container
+    display: flex
+    flex-direction: column
+    width: 20vw
+    &-form
+        display: flex
+        flex-direction: column
+        margin-bottom: 50px
+        &-input
+            border: 1px solid grey
+            margin-bottom: 5px
+            cursor: pointer
+            &:focus
+                outline: none
+        &-button
+            height: 30px
+            background: #617bfb
+            border: none
+            cursor: pointer
+            color: white
+        &-tooltip
+            height: 18px
+            width: 18px
+            background: lightgray
+            border-radius: 20px
+            position: absolute
+            top: 75px
+            left: 260px
+            color: white
+            cursor: pointer
+            & > p
+                text-align: center
+                margin: unset
+
+            &:hover &-text
+                visibility: visible
+            &-text
+                margin-left: 20px
+                visibility: hidden
+                width: 200px
+                background-color: rgba(211, 94, 94, 0.6)
+                color: #fff
+                text-align: center
+                padding: 5px 0
+                border-radius: 6px
+                position: absolute
+                z-index: 1
+

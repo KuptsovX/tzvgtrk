@@ -1,46 +1,17 @@
-# Getting Started with Create React App
+# Тестовое задание для ВГТРК
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Кредитная карточка
 
-In the project directory, you can run:
+При заполнении полей в форме, на карточке будут отрисовываться введенные значения.
+При вводе CVV карточка автоматически переворачивается на обратную сторону, можно как кликнуть на поле CVV так и перейти на него с помощью tab.
+Если в одном из предыдущих полей обнаружится ошибка, можно нажать на неправильное поле, и карточка перевернется на лицевую сторону
+Также, в зависимости от введенного номера карты, в правом-верхнем углу будет отображаться производитель, к которому принадлежит карточка. 
+При нажатии на кнопку "Отправить" страница обновится и данные полей сброятся, что эмулирует отправку на сервер. Также, на время отправки (2 секунды) снизу, в фигурных скобках будет отражена заполненная информация 
 
-### `npm start`
+## Отображение персон
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+GET запрос выполнил с помощью axios. После успешного запроса, данные отрисовываются в "карусельке" согласено макету в фигме.
+При прокрутке карусели до конца, она автоматически переходит в изначальное состояние. При возвращении в изначальное состояние после прокрутки,
+кнопка "назад" пропадает. В качестве стрелки назад, я использовал стрелку "вперед" из макета и отразил ее в sass файле В карточке оформление по макету я решил сделать в виде SVG компоненты, которая находится в директории CreditCard/Icons/Visual.tsx.
+Фотографии на макете растянуты, но мне не хотелось отходить от размеров заданных на макете, поэтому оставил так, как есть.
