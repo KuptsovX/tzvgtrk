@@ -10,6 +10,9 @@
             border: 1px solid grey
             margin-bottom: 5px
             cursor: pointer
+            width: 15vw
+            &-tooltip
+                display: flex
             &:focus
                 outline: none
         &-button
@@ -18,20 +21,17 @@
             border: none
             cursor: pointer
             color: white
+            width: 16vw
         &-tooltip
             height: 18px
             width: 18px
             background: lightgray
             border-radius: 20px
-            position: absolute
-            top: 75px
-            left: 260px
             color: white
             cursor: pointer
             & > p
                 text-align: center
                 margin: unset
-
             &:hover &-text
                 visibility: visible
             &-text

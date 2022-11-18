@@ -30,6 +30,7 @@ export default function CreditCardForm() {
                        onChange={(e) => setCardNameData(e.target.value)} onFocus={() => setCvvToggle(false)}/>
                 <input className='credit-card-form-container-form-input' placeholder='MM/YY' value={cardExpireData}
                        onChange={(e) => setCardExpireData(e.target.value)} onFocus={() => setCvvToggle(false)}/>
+                <div className='credit-card-form-container-form-input-tooltip'>
                 <input className='credit-card-form-container-form-input' placeholder='CVV' value={cardCvvData}
                        onChange={(e) => setCardCvvData(e.target.value)} onFocus={() => setCvvToggle(true)}/>
                     <div className='credit-card-form-container-form-tooltip'>
@@ -38,6 +39,7 @@ export default function CreditCardForm() {
                             3 цифры на задней стороне карточки
                         </span>
                     </div>
+                </div>
                 <button className='credit-card-form-container-form-button' type='submit'
                         onClick={handleSubmitData}>Отправить
                 </button>
