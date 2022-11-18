@@ -26,7 +26,8 @@ export default function Carousel({data, setId, click, setClick, setName, setSurn
     return (
         <div className='carousel-container'>
 
-            <div className='carousel-container-carousel'> {data.map((el: any) => <CarouselItem setClick={setClick}
+            <div className='carousel-container-carousel'> {data.map((el: any) => <CarouselItem key={el.id}
+                setClick={setClick}
                                                                                                setName={setName}
                                                                                                setId={setId}
                                                                                                setSurname={setSurname}

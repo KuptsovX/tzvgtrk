@@ -16,7 +16,6 @@ export default function Persons() {
             .then((res: any) => {
                 const person = res.data.data.content.filter((e: any) => {return e.title === 'Персоны'})
                 setData(person[0].content)
-                console.log(person[0].content)
             })
         //eslint-disable-next-line
     },[])
